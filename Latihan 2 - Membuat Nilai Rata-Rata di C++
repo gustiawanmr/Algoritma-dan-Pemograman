@@ -1,0 +1,48 @@
+#include <iostream>
+#include <conio.h>
+using namespace std;
+int main()
+  {
+	cout << "==========================================\n";
+    cout << "=           Tugas Pertemuan 3            =\n";
+    cout << "=       Algoritma dan Pemograman         =\n";
+    cout << "=     Universitas Indonesia Mandiri      =\n";
+    cout << "==========================================\n\n";
+    
+    string nama;
+    int i, nilai, data[50];
+    float rata, jml;
+    
+    
+    cout << "Mencari Nilai Rata-Rata Skor Pertandingan\n";
+	cout << "=========================================\n";
+    cout << "Nama Peserta : ";
+    
+    getline(cin,nama);
+    
+    cout << "Total Pertandingan = ";
+    
+    cin >> nilai;
+    
+    for (i = 0; i < nilai; i++)
+        {
+           cout << "Skor Pertandingan ke-" << i + 1 << " = ";
+           cin >> data [i];
+           jml += data [i];
+        }
+        
+    rata = jml / nilai;
+          
+	cout << "\n";	    
+    cout << "Peserta yang bernama : " << nama << endl;
+    cout << "dengan total skor pertandingan : "<< jml << endl;
+    cout << "memperoleh skor Rata-rata : " << rata << endl;
+    
+    cout << "\n \n";
+    cout << "Disusun oleh: Gustiawan Maula Rizki\n";
+    cout << "Program Studi Informatika\n";
+    cout << "Fakultas Teknologi dan Desain\n";
+    cout << "Universitas Indonesia Mandiri";
+    
+  getch();
+  }
