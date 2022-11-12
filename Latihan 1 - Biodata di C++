@@ -1,0 +1,19 @@
+#include <iostream>
+using namespace std;
+
+int main(){
+
+	cout << "Selamat Datang di C++";
+	cout << "\n";
+	cout << "----------------------";
+	cout << "\n";
+	cout << "Nama 		: Gustiawan Maula Rizki";
+	cout << "\n";
+	cout << "No. HP		: 0851-5654-7326";
+	cout << "\n";
+	cout << "Jenis Kelamin 	: L (Laki-Laki)";
+	cout << "\n";
+	
+	
+	return 0;
+}
