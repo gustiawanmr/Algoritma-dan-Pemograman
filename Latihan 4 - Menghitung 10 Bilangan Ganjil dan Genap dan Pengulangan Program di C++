@@ -1,0 +1,68 @@
+#include <iostream>
+using namespace std;
+int main()
+  {
+	cout << "==========================================\n";
+    cout << "=           Tugas Pertemuan 5            =\n";
+    cout << "=       Algoritma dan Pemograman         =\n";
+    cout << "=     Universitas Indonesia Mandiri      =\n";
+    cout << "==========================================\n\n";
+    
+    int gan=1, gen=2, counter=0;
+    int a,b; //untuk deklarasi nilai bilangan
+    char ulangi = 'Y';
+    string nama, jk;
+    
+    cout << "Soal 1, Menghitung 10 Bilangan Ganjil : \n";	
+	for(int a=gan; a<=20; a++)
+		if (a % 2 !=0)
+		cout << a << " ";
+		
+	cout << "\n \n";
+	
+	cout << "Soal 2, Menghitung 10 Bilangan Genap : \n";	
+	for (int b=gen; b <= 20; b++)
+		if (b % 2 !=1)
+		cout << b << " ";
+	
+	cout << "\n \n";
+	
+	cout << "Masukan Nama Kamu : ";
+	cin >> nama;
+		
+	cout << "Jenis Kelamin Kamu (L/P) : ";
+	cin >> jk;
+	
+	if (jk == "L"){
+		cout  << "Laki-Laki"<<endl;
+	}else if (jk == "P") {
+		cout << "Perempuan"<<endl;	
+	}else {
+		cout << "Input yang Anda masukan tidak diketahui";
+	}
+	
+	
+	cout << "\n==========================\n";
+	cout << "Selamat datang Kak : " << nama;
+	getline (cin,nama);
+	cout << "\n==========================\n\n";
+
+	do{
+
+	cout << "Apakah Kamu ingin mengulangi program? \n";
+	cout << "Jawab (Y/N) : ";
+	cin >> ulangi;
+	counter ++;
+	
+	}
+	while (ulangi == 'Y' );
+		
+	cout << "\n \n";
+    cout << "Disusun oleh: Gustiawan Maula Rizki\n";
+    cout << "Program Studi Informatika\n";
+    cout << "Fakultas Teknologi dan Desain\n";
+    cout << "Universitas Indonesia Mandiri";
+
+	return 0;
+
+  }
