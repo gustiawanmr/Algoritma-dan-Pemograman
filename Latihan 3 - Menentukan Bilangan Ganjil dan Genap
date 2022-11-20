@@ -1,13 +1,13 @@
 #include <iostream>
 #include <conio.h>
 using namespace std;
-int main()
-  {
+int main(){
+ {
 	cout << "==========================================\n";
-    cout << "=           Tugas Pertemuan 4            =\n";
-    cout << "=       Algoritma dan Pemograman         =\n";
-    cout << "=     Universitas Indonesia Mandiri      =\n";
-    cout << "==========================================\n\n";
+    	cout << "=           Tugas Pertemuan 4            =\n";
+    	cout << "=       Algoritma dan Pemograman         =\n";
+    	cout << "=     Universitas Indonesia Mandiri      =\n";
+    	cout << "==========================================\n\n";
     
 
 	int bilangan;
@@ -16,16 +16,16 @@ int main()
 	cout	<< endl;
 
 	if (bilangan % 2 == 0){
-		cout << bilangan << " : Adalah bilangan genap"<<endl;
-	}else {
-		cout << bilangan << " : Adalah bilangan ganjil"<<endl;	
+		cout << bilangan << " : Adalah bilangan genap" << endl;
+	}else{
+		cout << bilangan << " : Adalah bilangan ganjil" << endl;	
 	}
 	
 	cout << "\n \n";
-    cout << "Disusun oleh: Gustiawan Maula Rizki\n";
-    cout << "Program Studi Informatika\n";
-    cout << "Fakultas Teknologi dan Desain\n";
-    cout << "Universitas Indonesia Mandiri";
+	cout << "Disusun oleh: Gustiawan Maula Rizki\n";
+	cout << "Program Studi Informatika\n";
+	cout << "Fakultas Teknologi dan Desain\n";
+	cout << "Universitas Indonesia Mandiri";
     
 	getch();
   }
