@@ -1,0 +1,80 @@
+#include <iostream>
+#include <conio.h>
+using namespace std;
+int main()
+  {
+ 
+  	
+	cout << "==========================================\n";
+    cout << "=           Tugas Pertemuan 7            =\n";
+    cout << "=       Algoritma dan Pemograman         =\n";
+    cout << "=     Universitas Indonesia Mandiri      =\n";
+    cout << "==========================================\n\n";
+
+using namespace std;
+struct namalengkap {
+    string nama1;
+    string nama2;
+};
+struct mahasiswa {
+    namalengkap nama;
+    string prodi;
+    int id;
+    float IPK;
+};
+ 	mahasiswa UIM[10];
+    int i, n, cari, data=0, ID[100];
+
+ 	cout<<"Masukkan banyak data: ";
+	cin>>n;
+	
+	for (i=1; i<=n; i++){
+		cout << "========================================= \n";
+    	cout << "         DATA MAHASISWA ke - " << i << "\n";
+    	cout << "========================================= \n";
+
+    cout << "Nama Depan: ";
+   		cin >> UIM [i].nama.nama1;
+    cout << "Nama Belakang: ";
+    	cin >> UIM[i].nama.nama2;
+    cout << "Program Studi: ";
+    	cin >> UIM[i].prodi;
+    cout << "NIM: ";
+    	cin >> UIM[i].id;
+    cout << "Masukkan IPK: ";
+    	cin >> UIM[i].IPK;
+}
+	for (i=1; i<=n; i++){
+    cout<<endl<<endl<<"Mahasiswa Universitas Indonesia Mandiri ke - " << i;
+	cout << "\n=========================================\n";
+
+    cout << "Nama Lengkap: " << UIM[i].nama.nama1 << " " << UIM[i].nama.nama2  << "\n";
+    cout << "Jurusan: " << UIM[i].prodi << "\n";
+    cout << "NIM: " << UIM[i].id << "\n";
+    cout << "IPK: " << UIM[i].IPK << "\n \n \n";
+
+  }
+
+    cout << "Pencarian NIM Mahasiswa: ";
+    	cin >> cari;
+    cout << "===========================\n"<<endl;
+
+    for(i=0; i<=n; i++)    {
+        if (UIM[i].id == cari) {
+            data = 1;
+            cout << "Data ditemukan pada urutan Ke - "<<i;
+        }
+    }
+    if (data == 0){
+        cout << "Data yang Anda cari tidak ditemukan";
+    }
+    
+    cout << "\n \n";
+    cout << "Disusun oleh: Gustiawan Maula Rizki\n";
+    cout << "Program Studi Informatika\n";
+    cout << "Fakultas Teknologi dan Desain\n";
+    cout << "Universitas Indonesia Mandiri";
+    
+
+    getch();
+}
