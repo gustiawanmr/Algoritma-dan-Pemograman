@@ -3,7 +3,7 @@ using namespace std;
 int main()
   {
 	cout << "==========================================\n";
-    cout << "=           Tugas Pertemuan 5            =\n";
+    cout << "=           Tugas Pertemuan 6            =\n";
     cout << "=       Algoritma dan Pemograman         =\n";
     cout << "=     Universitas Indonesia Mandiri      =\n";
     cout << "==========================================\n\n";
